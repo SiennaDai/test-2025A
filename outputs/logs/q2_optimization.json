@@ -1,0 +1,285 @@
+{
+  "model": "q2-two-stage-derivative-free-v1",
+  "objective": "maximize union duration of strict full-cylinder occlusion",
+  "gravity_m_s2": 9.8,
+  "best": {
+    "rank": 1,
+    "theta_rad": 3.0829669144676473,
+    "theta_deg": 176.64099257746605,
+    "speed_m_s": 70.0,
+    "release_time_s": 0.0,
+    "release_x_m": 17800.0,
+    "release_y_m": 0.0,
+    "release_z_m": 1800.0,
+    "fuse_delay_s": 2.4967856396160064,
+    "explosion_time_s": 2.4967856396160064,
+    "explosion_x_m": 17625.525268056128,
+    "explosion_y_m": 10.240444866222791,
+    "explosion_z_m": 1769.4537012020558,
+    "strict_duration_s": 4.542879947227961,
+    "center_duration_s": 4.572673761421399,
+    "minimum_cloud_center_height_m": 1709.4537012020558,
+    "cloud_center_below_ground": false,
+    "cloud_center_ground_crossing_time_s": null,
+    "strict_intervals": [
+      {
+        "start": 2.4967876895102035,
+        "end": 7.039667636738165
+      }
+    ],
+    "center_intervals": [
+      {
+        "start": 2.4967856396160064,
+        "end": 7.069459401037405
+      }
+    ]
+  },
+  "near_optimal_candidates": [
+    {
+      "rank": 1,
+      "theta_rad": 3.0829669144676473,
+      "theta_deg": 176.64099257746605,
+      "speed_m_s": 70.0,
+      "release_time_s": 0.0,
+      "release_x_m": 17800.0,
+      "release_y_m": 0.0,
+      "release_z_m": 1800.0,
+      "fuse_delay_s": 2.4967856396160064,
+      "explosion_time_s": 2.4967856396160064,
+      "explosion_x_m": 17625.525268056128,
+      "explosion_y_m": 10.240444866222791,
+      "explosion_z_m": 1769.4537012020558,
+      "strict_duration_s": 4.542879947227961,
+      "center_duration_s": 4.572673761421399,
+      "minimum_cloud_center_height_m": 1709.4537012020558,
+      "cloud_center_below_ground": false,
+      "cloud_center_ground_crossing_time_s": null
+    },
+    {
+      "rank": 2,
+      "theta_rad": 3.0829941622951935,
+      "theta_deg": 176.64255376298536,
+      "speed_m_s": 70.0,
+      "release_time_s": 0.0,
+      "release_x_m": 17800.0,
+      "release_y_m": 0.0,
+      "release_z_m": 1800.0,
+      "fuse_delay_s": 2.4969851361207436,
+      "explosion_time_s": 2.4969851361207436,
+      "explosion_x_m": 17625.5110483048,
+      "explosion_y_m": 10.236508650370265,
+      "explosion_z_m": 1769.448819626961,
+      "strict_duration_s": 4.542879011616607,
+      "center_duration_s": 4.572708678208112,
+      "minimum_cloud_center_height_m": 1709.448819626961,
+      "cloud_center_below_ground": false,
+      "cloud_center_ground_crossing_time_s": null
+    },
+    {
+      "rank": 3,
+      "theta_rad": 3.0829942494310894,
+      "theta_deg": 176.6425587555044,
+      "speed_m_s": 70.0,
+      "release_time_s": 0.0,
+      "release_x_m": 17800.0,
+      "release_y_m": 0.0,
+      "release_z_m": 1800.0,
+      "fuse_delay_s": 2.496982578360253,
+      "explosion_time_s": 2.496982578360253,
+      "explosion_x_m": 17625.51122614876,
+      "explosion_y_m": 10.236482960474595,
+      "explosion_z_m": 1769.4488822164903,
+      "strict_duration_s": 4.542878886282921,
+      "center_duration_s": 4.5727209576552506,
+      "minimum_cloud_center_height_m": 1709.4488822164903,
+      "cloud_center_below_ground": false,
+      "cloud_center_ground_crossing_time_s": null
+    },
+    {
+      "rank": 4,
+      "theta_rad": 3.082978657449062,
+      "theta_deg": 176.64166540074,
+      "speed_m_s": 70.00023995987509,
+      "release_time_s": 0.00012491282480226807,
+      "release_x_m": 17799.99127108831,
+      "release_y_m": 0.0005122231284494511,
+      "release_z_m": 1800.0,
+      "fuse_delay_s": 2.496869972647158,
+      "explosion_time_s": 2.4969948854719606,
+      "explosion_x_m": 17625.50992760906,
+      "explosion_y_m": 10.239289152121575,
+      "explosion_z_m": 1769.4516376644956,
+      "strict_duration_s": 4.542876091238501,
+      "center_duration_s": 4.572699601246177,
+      "minimum_cloud_center_height_m": 1709.4516376644956,
+      "cloud_center_below_ground": false,
+      "cloud_center_ground_crossing_time_s": null
+    },
+    {
+      "rank": 5,
+      "theta_rad": 3.0846971642236545,
+      "theta_deg": 176.7401285859888,
+      "speed_m_s": 70.00592178596044,
+      "release_time_s": 0.0,
+      "release_x_m": 17800.0,
+      "release_y_m": 0.0,
+      "release_z_m": 1800.0,
+      "fuse_delay_s": 2.474636059255575,
+      "explosion_time_s": 2.474636059255575,
+      "explosion_x_m": 17627.04114194338,
+      "explosion_y_m": 9.851210938194331,
+      "explosion_z_m": 1769.993264233737,
+      "strict_duration_s": 4.541456706522618,
+      "center_duration_s": 4.706625967819461,
+      "minimum_cloud_center_height_m": 1709.993264233737,
+      "cloud_center_below_ground": false,
+      "cloud_center_ground_crossing_time_s": null
+    }
+  ],
+  "solver": {
+    "seed": 20250820,
+    "variable_order": [
+      "theta_rad",
+      "speed_m_s",
+      "release_time_s",
+      "fuse_delay_s"
+    ],
+    "bounds": {
+      "theta_rad": [
+        0.0,
+        6.283185307179586
+      ],
+      "speed_m_s": [
+        70.0,
+        140.0
+      ],
+      "release_time_s": [
+        0.0,
+        66.9991708074726
+      ],
+      "fuse_delay_s": [
+        0.0,
+        19.16629694999898
+      ]
+    },
+    "candidate_initialization": {
+      "mechanism": "seeded uniform population with Q1 and two heading baselines injected",
+      "reason": "positive-duration strategies occupy a sparse subset of the box bounds",
+      "baseline_q1": [
+        3.141592653589793,
+        120.0,
+        1.5,
+        3.6
+      ]
+    },
+    "center_differential_evolution": {
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "iterations": 28,
+      "evaluations": 1044,
+      "best_sampled_duration_s": 4.800000000000001,
+      "settings": {
+        "time_step_s": 0.2,
+        "maxiter": 28,
+        "popsize": 9,
+        "tol": 0.001,
+        "polish": false
+      }
+    },
+    "strict_differential_evolution": {
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "iterations": 14,
+      "evaluations": 540,
+      "best_sampled_duration_s": 4.600000000000001,
+      "settings": {
+        "time_step_s": 0.2,
+        "rim_samples": 96,
+        "maxiter": 14,
+        "popsize": 7,
+        "tol": 0.001,
+        "polish": false
+      }
+    },
+    "independent_boundary_refinement": {
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "iterations": 30,
+      "evaluations": 683,
+      "root_refined_duration_s": 4.54288109266813,
+      "theta_rad": 3.0829942494310894,
+      "fuse_delay_s": 2.496982578360253,
+      "settings": {
+        "seed": 731,
+        "theta_rad": [
+          3.0,
+          3.16
+        ],
+        "fuse_delay_s": [
+          2.2,
+          2.8
+        ],
+        "speed_m_s": 70.0,
+        "release_time_s": 0.0,
+        "independent_warm_start": {
+          "theta_rad": 3.0829669144676473,
+          "fuse_delay_s": 2.4967856396160064
+        },
+        "time_step_s": 0.1,
+        "rim_samples": 128,
+        "maxiter": 30,
+        "popsize": 10,
+        "tol": 1e-08
+      }
+    },
+    "local_refinements": [
+      {
+        "success": false,
+        "message": "Maximum number of function evaluations has been exceeded.",
+        "evaluations": 450,
+        "feasible": true,
+        "root_refined_duration_s": 4.541500271880932
+      },
+      {
+        "success": false,
+        "message": "Maximum number of function evaluations has been exceeded.",
+        "evaluations": 450,
+        "feasible": true,
+        "root_refined_duration_s": 4.541120499258
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 142,
+        "feasible": true,
+        "root_refined_duration_s": 4.542922442861856
+      },
+      {
+        "success": true,
+        "message": "Optimization terminated successfully.",
+        "evaluations": 159,
+        "feasible": true,
+        "root_refined_duration_s": 4.542919342155955
+      }
+    ],
+    "formal_evaluation": {
+      "candidate_count": 5,
+      "time_scan_step_s": 0.02,
+      "root_tolerance_s": 1e-10,
+      "rim_samples": 2048
+    },
+    "feasible_candidate_count": 15,
+    "formal_candidate_count": 5,
+    "convergence_claimed": false,
+    "status": "budget-exhausted-with-feasible-candidates"
+  },
+  "ground_rule": "Cloud continues descending for 20 seconds as stated; no additional ground cutoff.",
+  "feasibility_checks": {
+    "speed_within_bounds": true,
+    "release_time_nonnegative": true,
+    "fuse_delay_nonnegative": true,
+    "explosion_before_missile_hit": true,
+    "explosion_above_ground": true,
+    "cloud_center_below_ground_during_effective_window": false
+  }
+}

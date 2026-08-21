@@ -1,0 +1,195 @@
+{
+  "model": "q3-joint-ray-cover-v1",
+  "quantifiers": "for every target ray, at least one active cloud intersects before target",
+  "best": {
+    "rank": 1,
+    "theta_rad": 3.1047922065753095,
+    "theta_deg": 177.8914897018753,
+    "speed_m_s": 75.53740845287045,
+    "release_times_s": "[8.659727834377369e-05, 1.0001936769392439, 2.0002754290522153]",
+    "fuse_delays_s": "[2.7648584468708908, 2.58163903013058, 9.334353521045797]",
+    "explosion_times_s": "[2.7649450441492345, 3.5818327070698235, 11.334628950098011]",
+    "joint_duration_s": 5.513651363120298,
+    "conservative_duration_s": 5.513651362707908,
+    "joint_synergy_s": 4.1239012205096515e-10,
+    "sum_individual_strict_duration_s": 7.384337372454944,
+    "individual_strict_overlap_s": 1.8706860097470361,
+    "bombs": [
+      {
+        "schema_status": "provisional-schema; official result1.xlsx unavailable",
+        "drone": "FY1",
+        "bomb": 1,
+        "theta_rad": 3.1047922065753095,
+        "theta_deg": 177.8914897018753,
+        "speed_m_s": 75.53740845287045,
+        "release_time_s": 8.659727834377369e-05,
+        "release_x_m": 17799.993463094892,
+        "release_y_m": 0.00024066968406906064,
+        "release_z_m": 1800.0,
+        "fuse_delay_s": 2.7648584468708908,
+        "explosion_time_s": 2.7649450441492345,
+        "explosion_x_m": 17591.28462543121,
+        "explosion_y_m": 7.684288270608865,
+        "explosion_z_m": 1762.5422330669567,
+        "individual_strict_duration_s": 4.1487610254942044,
+        "joint_deletion_loss_s": 2.2780749916840346,
+        "ordered_incremental_contribution_s": 4.1487610254942044,
+        "minimum_cloud_center_height_m": 1702.5422330669567
+      },
+      {
+        "schema_status": "provisional-schema; official result1.xlsx unavailable",
+        "drone": "FY1",
+        "bomb": 2,
+        "theta_rad": 3.1047922065753095,
+        "theta_deg": 177.8914897018753,
+        "speed_m_s": 75.53740845287045,
+        "release_time_s": 1.0001936769392439,
+        "release_x_m": 17724.49911495874,
+        "release_y_m": 2.779721266541945,
+        "release_z_m": 1800.0,
+        "fuse_delay_s": 2.58163903013058,
+        "explosion_time_s": 3.5818327070698235,
+        "explosion_x_m": 17529.62082675721,
+        "explosion_y_m": 9.954568578663684,
+        "explosion_z_m": 1767.3421855987215,
+        "individual_strict_duration_s": 3.2355763469607393,
+        "joint_deletion_loss_s": 1.3648898001520848,
+        "ordered_incremental_contribution_s": 1.3648903376489656,
+        "minimum_cloud_center_height_m": 1707.3421855987215
+      },
+      {
+        "schema_status": "provisional-schema; official result1.xlsx unavailable",
+        "drone": "FY1",
+        "bomb": 3,
+        "theta_rad": 3.1047922065753095,
+        "theta_deg": 177.8914897018753,
+        "speed_m_s": 75.53740845287045,
+        "release_time_s": 2.0002754290522153,
+        "release_x_m": 17649.00667870459,
+        "release_y_m": 5.559131473509113,
+        "release_z_m": 1800.0,
+        "fuse_delay_s": 9.334353521045797,
+        "explosion_time_s": 11.334628950098011,
+        "explosion_x_m": 16944.391194347994,
+        "explosion_y_m": 31.50100812211325,
+        "explosion_z_m": 1373.0622372862856,
+        "individual_strict_duration_s": 0,
+        "joint_deletion_loss_s": 6.217248937900877e-13,
+        "ordered_incremental_contribution_s": -2.2872370664117625e-11,
+        "minimum_cloud_center_height_m": 1313.0622372862856
+      }
+    ]
+  },
+  "near_optimal_candidates": [
+    {
+      "rank": 1,
+      "theta_rad": 3.1047922065753095,
+      "theta_deg": 177.8914897018753,
+      "speed_m_s": 75.53740845287045,
+      "release_times_s": "[8.659727834377369e-05, 1.0001936769392439, 2.0002754290522153]",
+      "fuse_delays_s": "[2.7648584468708908, 2.58163903013058, 9.334353521045797]",
+      "explosion_times_s": "[2.7649450441492345, 3.5818327070698235, 11.334628950098011]",
+      "joint_duration_s": 5.513651363120298,
+      "conservative_duration_s": 5.513651362707908,
+      "joint_synergy_s": 4.1239012205096515e-10,
+      "sum_individual_strict_duration_s": 7.384337372454944,
+      "individual_strict_overlap_s": 1.8706860097470361
+    },
+    {
+      "rank": 2,
+      "theta_rad": 3.100882659202009,
+      "theta_deg": 177.66748913757868,
+      "speed_m_s": 70.48125401910144,
+      "release_times_s": "[5.9563231145800334e-05, 1.000226008279025, 4.581490746827413]",
+      "fuse_delays_s": "[2.6905470905730926, 2.4758604126456216, 1.3351800273419592]",
+      "explosion_times_s": "[2.6906066538042386, 3.4760864209246467, 5.916670774169372]",
+      "joint_duration_s": 5.5013428381602,
+      "conservative_duration_s": 5.5013428376185605,
+      "joint_synergy_s": 5.416396220425668e-10,
+      "sum_individual_strict_duration_s": 7.397073583620252,
+      "individual_strict_overlap_s": 1.895730746001692
+    }
+  ],
+  "solver": {
+    "seed": 20250830,
+    "variable_order": [
+      "theta_rad",
+      "speed_m_s",
+      "s0_s",
+      "s1_s",
+      "s2_s",
+      "fuse1_s",
+      "fuse2_s",
+      "fuse3_s"
+    ],
+    "global_search": {
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "iterations": 12,
+      "evaluations": 624,
+      "sampled_joint_duration_s": 4.792495821736527,
+      "settings": {
+        "time_step_s": 0.25,
+        "surface_angles": 48,
+        "surface_levels": 7,
+        "maxiter": 12,
+        "popsize": 6,
+        "tol": 0.001,
+        "polish": false
+      }
+    },
+    "candidate_initialization": {
+      "mechanism": "Q2 anchor plus structured partial-edge-complement seeds over four speeds, four heading offsets, and simultaneous/overlapping/staggered fuse families",
+      "interpretation": "later bombs target partial view-domain gaps; no single-cloud relay is assumed",
+      "structured_seed_count": 17
+    },
+    "sampled_time_grid": {
+      "anchor": "absolute task time t=0",
+      "included_points": "fixed-step grid plus window endpoints and cloud events",
+      "invariance": "inactive late clouds cannot shift the sampling phase of earlier coverage"
+    },
+    "corrected_full_rerun": true,
+    "local_refinements": [
+      {
+        "success": false,
+        "message": "Maximum number of function evaluations has been exceeded.",
+        "evaluations": 160,
+        "root_refined_duration_s": 5.501366211985424
+      },
+      {
+        "success": false,
+        "message": "Maximum number of function evaluations has been exceeded.",
+        "evaluations": 160,
+        "root_refined_duration_s": 5.1405766107108
+      }
+    ],
+    "formal_settings": {
+      "candidate_count": 2,
+      "time_scan_step_s": 0.025,
+      "root_tolerance_s": 1e-09,
+      "surface_angles": 180,
+      "surface_levels": 21,
+      "adaptive_max_surface_angles": 720,
+      "adaptive_max_surface_levels": 81,
+      "continuous_refinement_starts": 1,
+      "continuous_refinement_maxfev": 50
+    },
+    "status": "budget-exhausted-with-feasible-candidates",
+    "convergence_claimed": false,
+    "feasible_candidate_count": 12,
+    "retained_incumbent": {
+      "source": "pre-correction candidate with independent formal joint-coverage validation",
+      "vector": [
+        3.1047922065753095,
+        75.53740845287045,
+        8.659727834377369e-05,
+        0.0001070796609000733,
+        8.17521129715e-05,
+        2.7648584468708908,
+        2.58163903013058,
+        9.334353521045797
+      ],
+      "formal_joint_duration_s": 5.513651363120298
+    }
+  }
+}

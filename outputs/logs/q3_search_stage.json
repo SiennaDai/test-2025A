@@ -1,0 +1,36 @@
+{
+  "stage": "search-complete",
+  "corrected_search_candidate_formal_duration_s": 5.5013428381602,
+  "retained_incumbent_formal_duration_s": 5.513651363120298,
+  "selected": "retained-incumbent",
+  "formal_candidates": [
+    {
+      "rank": 1,
+      "theta_rad": 3.1047922065753095,
+      "theta_deg": 177.8914897018753,
+      "speed_m_s": 75.53740845287045,
+      "release_times_s": "[8.659727834377369e-05, 1.0001936769392439, 2.0002754290522153]",
+      "fuse_delays_s": "[2.7648584468708908, 2.58163903013058, 9.334353521045797]",
+      "explosion_times_s": "[2.7649450441492345, 3.5818327070698235, 11.334628950098011]",
+      "joint_duration_s": 5.513651363120298,
+      "conservative_duration_s": 5.513651362707908,
+      "joint_synergy_s": 4.1239012205096515e-10,
+      "sum_individual_strict_duration_s": 7.384337372454944,
+      "individual_strict_overlap_s": 1.8706860097470361
+    },
+    {
+      "rank": 2,
+      "theta_rad": 3.100882659202009,
+      "theta_deg": 177.66748913757868,
+      "speed_m_s": 70.48125401910144,
+      "release_times_s": "[5.9563231145800334e-05, 1.000226008279025, 4.581490746827413]",
+      "fuse_delays_s": "[2.6905470905730926, 2.4758604126456216, 1.3351800273419592]",
+      "explosion_times_s": "[2.6906066538042386, 3.4760864209246467, 5.916670774169372]",
+      "joint_duration_s": 5.5013428381602,
+      "conservative_duration_s": 5.5013428376185605,
+      "joint_synergy_s": 5.416396220425668e-10,
+      "sum_individual_strict_duration_s": 7.397073583620252,
+      "individual_strict_overlap_s": 1.895730746001692
+    }
+  ]
+}

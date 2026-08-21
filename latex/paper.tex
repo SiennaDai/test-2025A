@@ -1,0 +1,127 @@
+% !TeX program = xelatex
+% 2025 CUMCM A paper, electronic edition: abstract is page 1.
+\documentclass[UTF8,zihao=-4]{ctexart}
+
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,array,longtable,tabularx}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{pdflscape}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\graphicspath{{../outputs/figures/}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0pt}
+\linespread{1.25}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2.5em}
+\renewcommand{\arraystretch}{1.16}
+\setcounter{secnumdepth}{3}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\ctexset{
+  section={format=\centering\heiti\zihao{3},beforeskip=1.2ex,afterskip=0.8ex},
+  subsection={format=\heiti\zihao{4},beforeskip=1.0ex,afterskip=0.5ex}
+}
+
+\lstdefinestyle{python}{
+  language=Python,
+  basicstyle=\ttfamily\zihao{6},
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=6pt,
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=false,
+  showstringspaces=false,
+  columns=fullflexible,
+  keepspaces=true,
+  tabsize=4
+}
+
+\newcommand{\PaperTitle}[1]{%
+  \begin{center}
+    {\heiti\zihao{2} #1}\par
+  \end{center}
+  \vspace{0.8em}
+  \noindent\textbf{摘要：}%
+}
+
+\newif\iffullsourceappendix
+\fullsourceappendixtrue
+
+\begin{document}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{abstract.tex}
+
+\vfill
+\noindent{\footnotesize\color{gray!75!black}
+\textbf{AI 辅助标注：}本文第 1--13 节的题面整理、模型规格检查、代码实现、数值验证与文字初稿使用了 OpenAI Codex（GPT-5）辅助\cite{codex}；判据选择、参数口径和最终取舍由使用者确认，数值由随文程序复算。关键交互与人工修改情况见支撑材料《AI工具使用详情》。}
+
+\clearpage
+\input{body.tex}
+
+\section*{参考文献}
+\addcontentsline{toc}{section}{参考文献}
+\begin{thebibliography}{9}
+  \bibitem{cumcm2025a} 全国大学生数学建模竞赛组委会. 2025 年全国大学生数学建模竞赛 A 题：烟幕干扰弹的投放策略[Z]. 2025.
+  \bibitem{codex} OpenAI Codex, GPT-5, OpenAI, 使用日期：2026-08-20--2026-08-21.
+\end{thebibliography}
+
+\appendix
+\section{支撑材料文件列表}
+
+本论文的支撑材料与论文电子版分开提交。主要文件如下：
+\begin{longtable}{p{0.32\linewidth}p{0.60\linewidth}}
+\toprule
+文件或目录 & 内容说明 \\
+\midrule
+\texttt{problem.md} & 经页面核对的结构化题面 \\
+\texttt{model-spec.md} & 模型边界、变量、约束、判据与需求追踪 \\
+\texttt{configs/} & 问题一至问题五的正式运行配置 \\
+\texttt{src/q1.py}--\texttt{src/q5.py} & 五个问题的完整可运行源程序 \\
+\texttt{run.py} & 统一运行入口 \\
+\texttt{tests/} & 联合覆盖、事件边界与回归测试 \\
+\texttt{outputs/manifest.json} & 正式运行种子和产物清单 \\
+\texttt{outputs/logs/} & 优化状态、边界、收敛和独立几何验证记录 \\
+\texttt{outputs/tables/} & 结果表、区间表及三个结果工作簿 \\
+\texttt{AI工具使用详情.pdf} & AI 工具名称、用途、关键交互与人工修改说明 \\
+\bottomrule
+\end{longtable}
+
+\section{完整可运行源程序}
+
+以下程序与支撑材料中的源文件一致。运行环境和命令见支撑材料中的
+\texttt{README.md}。为满足论文附录包含完整程序的要求，正式提交稿默认展开全部源代码；若仅进行正文排版预览，可将导言区的
+\verb|\fullsourceappendixtrue| 改为 \verb|\fullsourceappendixfalse|。
+
+\iffullsourceappendix
+  \subsection{统一运行入口}
+  \lstinputlisting[style=python]{../run.py}
+  \subsection{问题一程序}
+  \lstinputlisting[style=python]{../src/q1.py}
+  \subsection{问题二程序}
+  \lstinputlisting[style=python]{../src/q2.py}
+  \subsection{问题三程序}
+  \lstinputlisting[style=python]{../src/q3.py}
+  \subsection{问题四程序}
+  \lstinputlisting[style=python]{../src/q4.py}
+  \subsection{问题五程序}
+  \lstinputlisting[style=python]{../src/q5.py}
+\else
+  本预览稿未展开源代码；正式提交前必须重新启用完整源程序附录。
+\fi
+
+\end{document}

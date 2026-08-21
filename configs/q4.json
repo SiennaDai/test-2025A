@@ -1,0 +1,63 @@
+{
+  "gravity": 9.8,
+  "seed": 20250904,
+  "uavs": {
+    "FY1": [17800.0, 0.0, 1800.0],
+    "FY2": [12000.0, 1400.0, 1400.0],
+    "FY3": [6000.0, -3000.0, 700.0]
+  },
+  "bounds": {
+    "theta_rad": [0.0, 6.283185307179586],
+    "speed_m_s": [70.0, 140.0],
+    "release_time_s": [0.0, 30.0]
+  },
+  "single_search": {
+    "time_step_s": 0.25,
+    "surface_angles": 48,
+    "surface_levels": 7,
+    "maxiter": 10,
+    "popsize": 6,
+    "tol": 0.001
+  },
+  "joint_search": {
+    "time_step_s": 0.25,
+    "surface_angles": 48,
+    "surface_levels": 7,
+    "maxiter": 10,
+    "popsize": 4,
+    "tol": 0.001
+  },
+  "local_refinement": {
+    "starts": 2,
+    "maxfev": 120,
+    "time_step_s": 0.1,
+    "surface_angles": 96,
+    "surface_levels": 11,
+    "xatol": 0.0001,
+    "fatol": 0.0001
+  },
+  "formal_evaluation": {
+    "candidate_count": 2,
+    "time_scan_step_s": 0.025,
+    "root_tolerance_s": 1e-9,
+    "surface_angles": 180,
+    "surface_levels": 21,
+    "adaptive_max_surface_angles": 720,
+    "adaptive_max_surface_levels": 81,
+    "continuous_refinement_starts": 1,
+    "continuous_refinement_maxfev": 50
+  },
+  "validation": {
+    "convergence_settings": [
+      {"time_scan_step_s": 0.1, "surface_angles": 90, "surface_levels": 11},
+      {"time_scan_step_s": 0.05, "surface_angles": 180, "surface_levels": 21},
+      {"time_scan_step_s": 0.025, "surface_angles": 360, "surface_levels": 41}
+    ],
+    "boundary_probe_s": 0.0001,
+    "direct_surface_angles": 720,
+    "direct_surface_levels": 51,
+    "q3_regression_expected_s": 5.513651363120298,
+    "q3_regression_tolerance_s": 0.00001
+  },
+  "near_optimal_count": 2
+}

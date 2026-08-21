@@ -1,0 +1,55 @@
+{
+  "stage": "search-complete",
+  "single_candidates": [
+    {
+      "uav": "FY1",
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "evaluations": 264,
+      "sampled_duration_s": 4.255861922288453,
+      "vector": [
+        3.1286941970724125,
+        135.84810521366387,
+        0.8096483984321754,
+        4.0594896792793715
+      ]
+    },
+    {
+      "uav": "FY2",
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "evaluations": 264,
+      "sampled_duration_s": 0.0,
+      "vector": [
+        5.111044687634404,
+        112.04755110942293,
+        7.455825208532954,
+        5.574831924566585
+      ]
+    },
+    {
+      "uav": "FY3",
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "evaluations": 264,
+      "sampled_duration_s": 0.0,
+      "vector": [
+        2.0810800873870834,
+        139.40680911692448,
+        18.783502551423684,
+        6.765894218042682
+      ]
+    }
+  ],
+  "global_success": false,
+  "global_message": "Maximum number of iterations has been exceeded.",
+  "global_evaluations": 528,
+  "completed_local_starts": 2,
+  "formal_candidate_count": 2,
+  "formal_durations_s": [
+    10.13885732601105,
+    4.211456072726671
+  ],
+  "single_concat_incumbent_retained": true,
+  "sampled_time_grid": "absolute task time t=0"
+}

@@ -1,0 +1,204 @@
+{
+  "stage": "search-complete",
+  "mode": "persistent-incumbent-formal-rerun",
+  "persistent_J_sum_s": 13.904023956833157,
+  "marginal_fill_candidate_J_sum_s": 13.869304210239239,
+  "retained_persistent_incumbent": true,
+  "previous_search_stage": {
+    "stage": "search-complete",
+    "mode": "persistent-incumbent-formal-rerun",
+    "persistent_J_sum_s": 13.904023956833157,
+    "marginal_fill_candidate_J_sum_s": 13.869304210239239,
+    "retained_persistent_incumbent": true,
+    "previous_search_stage": {
+      "stage": "search-complete",
+      "library_size": 15,
+      "block_records": [
+        {
+          "round": 1,
+          "uav": "FY1",
+          "evaluations": 16,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "proxy_score_s": 14.05446806718039,
+          "durations_s": [
+            10.225763368402264,
+            2.0,
+            1.8287046987781252
+          ]
+        },
+        {
+          "round": 1,
+          "uav": "FY2",
+          "evaluations": 16,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "proxy_score_s": 14.05446806718039,
+          "durations_s": [
+            10.225763368402264,
+            2.0,
+            1.8287046987781252
+          ]
+        },
+        {
+          "round": 1,
+          "uav": "FY3",
+          "evaluations": 16,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "proxy_score_s": 14.183172765958515,
+          "durations_s": [
+            10.35446806718039,
+            2.0,
+            1.8287046987781252
+          ]
+        },
+        {
+          "round": 1,
+          "uav": "FY4",
+          "evaluations": 16,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "proxy_score_s": 14.220631218124542,
+          "durations_s": [
+            10.35446806718039,
+            2.0374584521660264,
+            1.8287046987781252
+          ]
+        },
+        {
+          "round": 1,
+          "uav": "FY5",
+          "evaluations": 16,
+          "success": false,
+          "message": "Maximum number of function evaluations has been exceeded.",
+          "proxy_score_s": 14.220631218124542,
+          "durations_s": [
+            10.35446806718039,
+            2.0374584521660264,
+            1.8287046987781252
+          ]
+        }
+      ],
+      "marginal_fill_records": [
+        {
+          "uav": "FY4",
+          "evaluations": 16,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "before_score_s": 14.12063121812454,
+          "after_score_s": 14.1581135035039,
+          "before_durations_s": [
+            10.229468067180388,
+            2.0624584521660267,
+            1.8287046987781252
+          ],
+          "after_durations_s": [
+            10.229468067180388,
+            2.0624584521660267,
+            1.8661869841574852
+          ],
+          "accepted": true
+        },
+        {
+          "uav": "FY5",
+          "evaluations": 16,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "before_score_s": 14.1581135035039,
+          "after_score_s": 14.195315664991162,
+          "before_durations_s": [
+            10.229468067180388,
+            2.0624584521660267,
+            1.8661869841574852
+          ],
+          "after_durations_s": [
+            10.26667022866765,
+            2.0624584521660267,
+            1.8661869841574852
+          ],
+          "accepted": true
+        },
+        {
+          "uav": "FY1",
+          "evaluations": 16,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "before_score_s": 14.195315664991162,
+          "after_score_s": 14.195315664991162,
+          "before_durations_s": [
+            10.26667022866765,
+            2.0624584521660267,
+            1.8661869841574852
+          ],
+          "after_durations_s": [
+            10.26667022866765,
+            2.0624584521660267,
+            1.8661869841574852
+          ],
+          "accepted": false
+        },
+        {
+          "uav": "FY2",
+          "evaluations": 16,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "before_score_s": 14.195315664991162,
+          "after_score_s": 14.205694623578063,
+          "before_durations_s": [
+            10.26667022866765,
+            2.0624584521660267,
+            1.8661869841574852
+          ],
+          "after_durations_s": [
+            10.26667022866765,
+            2.0728374107529284,
+            1.8661869841574852
+          ],
+          "accepted": true
+        },
+        {
+          "uav": "FY3",
+          "evaluations": 16,
+          "success": true,
+          "message": "Optimization terminated successfully.",
+          "before_score_s": 14.205694623578063,
+          "after_score_s": 14.234728477286916,
+          "before_durations_s": [
+            10.26667022866765,
+            2.0728374107529284,
+            1.8661869841574852
+          ],
+          "after_durations_s": [
+            10.295704082376503,
+            2.0728374107529284,
+            1.8661869841574852
+          ],
+          "accepted": true
+        }
+      ],
+      "formal_scores": [
+        {
+          "j_sum_s": 13.869304210239239,
+          "j_min_s": 1.7411337307494925,
+          "durations_s": [
+            10.21531842806111,
+            1.9128520514286365,
+            1.7411337307494925
+          ]
+        },
+        {
+          "j_sum_s": 13.79284310718295,
+          "j_min_s": 1.741133730745993,
+          "durations_s": [
+            10.138857325019288,
+            1.9128520514176692,
+            1.741133730745993
+          ]
+        }
+      ],
+      "q4_anchor_incumbent_retained": true,
+      "sampled_time_grid": "absolute task time t=0"
+    }
+  }
+}

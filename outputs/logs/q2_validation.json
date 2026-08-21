@@ -1,0 +1,229 @@
+{
+  "convergence": [
+    {
+      "time_scan_step_s": 0.1,
+      "rim_samples": 256,
+      "interval_count": 1,
+      "strict_duration_s": 4.542879947227982
+    },
+    {
+      "time_scan_step_s": 0.05,
+      "rim_samples": 512,
+      "interval_count": 1,
+      "strict_duration_s": 4.542879947235083
+    },
+    {
+      "time_scan_step_s": 0.02,
+      "rim_samples": 1024,
+      "interval_count": 1,
+      "strict_duration_s": 4.542879947227929
+    },
+    {
+      "time_scan_step_s": 0.02,
+      "rim_samples": 2048,
+      "interval_count": 1,
+      "strict_duration_s": 4.542879947227961
+    }
+  ],
+  "boundary_checks": [
+    {
+      "location": "pre-explosion",
+      "time_s": 2.496685639616006,
+      "expected_state": "inactive",
+      "strict_margin_m": null,
+      "cloud_active": false
+    },
+    {
+      "location": "before-start",
+      "time_s": 2.496786664563105,
+      "expected_state": "outside",
+      "strict_margin_m": 5.070065321888251e-05,
+      "cloud_active": true
+    },
+    {
+      "location": "start",
+      "time_s": 2.4967876895102035,
+      "expected_state": "boundary",
+      "strict_margin_m": -9.379164112033322e-13,
+      "cloud_active": true
+    },
+    {
+      "location": "midpoint",
+      "time_s": 4.7682276631241844,
+      "expected_state": "inside",
+      "strict_margin_m": -184.45773829894867,
+      "cloud_active": true
+    },
+    {
+      "location": "end",
+      "time_s": 7.039667636738165,
+      "expected_state": "boundary",
+      "strict_margin_m": -5.03632691106759e-11,
+      "cloud_active": true
+    },
+    {
+      "location": "after-end",
+      "time_s": 7.039767636738165,
+      "expected_state": "outside",
+      "strict_margin_m": 0.027734876969930156,
+      "cloud_active": true
+    }
+  ],
+  "independent_full_surface_segment_checks": [
+    {
+      "location": "pre-explosion",
+      "time_s": 2.496685639616006,
+      "cloud_active": false,
+      "occluded": false
+    },
+    {
+      "location": "before-start",
+      "time_s": 2.496786664563105,
+      "cloud_active": true,
+      "sampled_surface_points": 88560,
+      "maximum_segment_distance_m": 10.00000426889963,
+      "distance_margin_m": 4.268899630233136e-06,
+      "occluded": false,
+      "worst_sampled_target_point": [
+        0.7316992428735742,
+        206.9616532675779,
+        0.0
+      ]
+    },
+    {
+      "location": "start",
+      "time_s": 2.4967876895102035,
+      "cloud_active": true,
+      "sampled_surface_points": 88560,
+      "maximum_segment_distance_m": 9.999999980992907,
+      "distance_margin_m": -1.9007092788569935e-08,
+      "occluded": true,
+      "worst_sampled_target_point": [
+        0.7316992428735742,
+        206.9616532675779,
+        0.0
+      ]
+    },
+    {
+      "location": "midpoint",
+      "time_s": 4.7682276631241844,
+      "cloud_active": true,
+      "sampled_surface_points": 88560,
+      "maximum_segment_distance_m": 0.5564571162956072,
+      "distance_margin_m": -9.443542883704392,
+      "occluded": true,
+      "worst_sampled_target_point": [
+        -0.9136833455403615,
+        193.05988597038333,
+        10.0
+      ]
+    },
+    {
+      "location": "end",
+      "time_s": 7.039667636738165,
+      "cloud_active": true,
+      "sampled_surface_points": 88560,
+      "maximum_segment_distance_m": 9.999999919075238,
+      "distance_margin_m": -8.09247620026099e-08,
+      "occluded": true,
+      "worst_sampled_target_point": [
+        -0.7316992428735736,
+        193.0383467324221,
+        10.0
+      ]
+    },
+    {
+      "location": "after-end",
+      "time_s": 7.039767636738165,
+      "cloud_active": true,
+      "sampled_surface_points": 88560,
+      "maximum_segment_distance_m": 10.000423862047386,
+      "distance_margin_m": 0.0004238620473859811,
+      "occluded": false,
+      "worst_sampled_target_point": [
+        -0.7316992428735736,
+        193.0383467324221,
+        10.0
+      ]
+    }
+  ],
+  "local_perturbation_checks": [
+    {
+      "perturbation": "theta-minus",
+      "strategy": {
+        "theta_rad": 3.082866914467647,
+        "speed_m_s": 70.0,
+        "release_time_s": 0.0,
+        "fuse_delay_s": 2.4967856396160064
+      },
+      "root_refined_strict_duration_s": 4.539863127929283,
+      "feasible": true
+    },
+    {
+      "perturbation": "theta-plus",
+      "strategy": {
+        "theta_rad": 3.0830669144676475,
+        "speed_m_s": 70.0,
+        "release_time_s": 0.0,
+        "fuse_delay_s": 2.4967856396160064
+      },
+      "root_refined_strict_duration_s": 4.542848318558811,
+      "feasible": true
+    },
+    {
+      "perturbation": "speed-plus",
+      "strategy": {
+        "theta_rad": 3.0829669144676473,
+        "speed_m_s": 70.1,
+        "release_time_s": 0.0,
+        "fuse_delay_s": 2.4967856396160064
+      },
+      "root_refined_strict_duration_s": 4.5427971116677295,
+      "feasible": true
+    },
+    {
+      "perturbation": "release-plus",
+      "strategy": {
+        "theta_rad": 3.0829669144676473,
+        "speed_m_s": 70.0,
+        "release_time_s": 0.01,
+        "fuse_delay_s": 2.4967856396160064
+      },
+      "root_refined_strict_duration_s": 4.5423927736005965,
+      "feasible": true
+    },
+    {
+      "perturbation": "fuse-minus",
+      "strategy": {
+        "theta_rad": 3.0829669144676473,
+        "speed_m_s": 70.0,
+        "release_time_s": 0.0,
+        "fuse_delay_s": 2.4867856396160066
+      },
+      "root_refined_strict_duration_s": 4.542331122785078,
+      "feasible": true
+    },
+    {
+      "perturbation": "fuse-plus",
+      "strategy": {
+        "theta_rad": 3.0829669144676473,
+        "speed_m_s": 70.0,
+        "release_time_s": 0.0,
+        "fuse_delay_s": 2.506785639616006
+      },
+      "root_refined_strict_duration_s": 4.50364316372115,
+      "feasible": true
+    }
+  ],
+  "q1_kernel_regression": {
+    "strategy": {
+      "theta_rad": 3.141592653589793,
+      "speed_m_s": 120.0,
+      "release_time_s": 1.5,
+      "fuse_delay_s": 3.6
+    },
+    "strict_duration_s": 1.3916426681980916,
+    "expected_q1_strict_duration_s": 1.3916426681980933,
+    "absolute_difference_s": 1.7763568394002505e-15
+  }
+}

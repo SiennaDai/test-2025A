@@ -1,0 +1,71 @@
+{
+  "gravity": 9.8,
+  "seed": 20250820,
+  "bounds": {
+    "theta_rad": [0.0, 6.283185307179586],
+    "speed_m_s": [70.0, 140.0],
+    "release_time_s": [0.0, 66.9991708074726],
+    "fuse_delay_s": [0.0, 19.16629694999898]
+  },
+  "center_search": {
+    "time_step_s": 0.2,
+    "maxiter": 28,
+    "popsize": 9,
+    "tol": 0.001,
+    "polish": false
+  },
+  "strict_search": {
+    "time_step_s": 0.2,
+    "rim_samples": 96,
+    "maxiter": 14,
+    "popsize": 7,
+    "tol": 0.001,
+    "polish": false
+  },
+  "local_refinement": {
+    "starts": 4,
+    "maxfev": 450,
+    "xtol": 0.0001,
+    "ftol": 0.0001
+  },
+  "boundary_refinement": {
+    "seed": 731,
+    "theta_rad": [3.0, 3.16],
+    "fuse_delay_s": [2.2, 2.8],
+    "speed_m_s": 70.0,
+    "release_time_s": 0.0,
+    "independent_warm_start": {
+      "theta_rad": 3.0829669144676473,
+      "fuse_delay_s": 2.4967856396160064
+    },
+    "time_step_s": 0.1,
+    "rim_samples": 128,
+    "maxiter": 30,
+    "popsize": 10,
+    "tol": 1e-8
+  },
+  "formal_evaluation": {
+    "candidate_count": 5,
+    "time_scan_step_s": 0.02,
+    "root_tolerance_s": 1e-10,
+    "rim_samples": 2048
+  },
+  "validation": {
+    "convergence_settings": [
+      {"time_scan_step_s": 0.1, "rim_samples": 256},
+      {"time_scan_step_s": 0.05, "rim_samples": 512},
+      {"time_scan_step_s": 0.02, "rim_samples": 1024},
+      {"time_scan_step_s": 0.02, "rim_samples": 2048}
+    ],
+    "boundary_probe_s": 0.0001,
+    "surface_angles": 720,
+    "surface_levels": 41,
+    "perturbation_theta_rad": 0.0001,
+    "perturbation_speed_m_s": 0.1,
+    "perturbation_release_time_s": 0.01,
+    "perturbation_fuse_delay_s": 0.01,
+    "perturbation_time_step_s": 0.1,
+    "perturbation_rim_samples": 256
+  },
+  "near_optimal_count": 5
+}

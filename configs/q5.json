@@ -1,0 +1,102 @@
+{
+  "gravity": 9.8,
+  "seed": 20250905,
+  "formal_only_persistent_rerun": true,
+  "persistent_incumbent": {
+    "source": "previous formally verified Q5 run before marginal-fill search",
+    "expected_J_sum_s": 13.904023956833157,
+    "vector": [
+      3.1294013468246114, 136.94294795970202, 0.815996802195909, 0.0, 0.0, 4.013282097993001, 3.9637354054251857, 3.9637354054251857,
+      5.064427753079513, 112.12636256955402, 7.471101988163637, 0.0, 0.0, 5.477371275031839, 5.477371275031839, 5.477371275031839,
+      2.112082090067693, 138.34057047223354, 19.098229798330642, 0.0000117187499988, 0.0000117187500024, 6.94656445157352, 6.834694932031309, 6.834694932031309,
+      5.302857917472039, 118.6283022021396, 6.37567572021409, 0.0, 0.0, 9.749407375453858, 9.749407375453858, 10.23687774422655,
+      2.3654096932478654, 114.52222435611584, 15.757615975352385, 0.0, 0.0, 4.5849746270913645, 4.5849746270913645, 4.5849746270913645
+    ]
+  },
+  "uavs": {
+    "FY1": [17800.0, 0.0, 1800.0],
+    "FY2": [12000.0, 1400.0, 1400.0],
+    "FY3": [6000.0, -3000.0, 700.0],
+    "FY4": [11000.0, 2000.0, 1800.0],
+    "FY5": [13000.0, -2000.0, 1300.0]
+  },
+  "missiles": {
+    "M1": [20000.0, 0.0, 2000.0],
+    "M2": [19000.0, 600.0, 2100.0],
+    "M3": [18000.0, -600.0, 1900.0]
+  },
+  "bounds": {
+    "theta_rad": [0.0, 6.283185307179586],
+    "speed_m_s": [70.0, 140.0],
+    "s0_s": [0.0, 45.0],
+    "s1_s": [0.0, 20.0],
+    "s2_s": [0.0, 20.0]
+  },
+  "single_library": {
+    "time_step_s": 0.5,
+    "surface_angles": 32,
+    "surface_levels": 5,
+    "maxiter": 3,
+    "popsize": 4,
+    "tol": 0.001
+  },
+  "assembly": {
+    "candidate_assignments": 6,
+    "time_step_s": 0.25,
+    "surface_angles": 48,
+    "surface_levels": 7
+  },
+  "block_refinement": {
+    "rounds": 1,
+    "maxfev_per_block": 16,
+    "time_step_s": 0.2,
+    "surface_angles": 48,
+    "surface_levels": 7,
+    "xatol": 0.001,
+    "fatol": 0.001
+  },
+  "marginal_fill": {
+    "uav_order": ["FY4", "FY5", "FY1", "FY2", "FY3"],
+    "maxiter": 1,
+    "population_size": 8,
+    "improvement_threshold_s": 0.0001,
+    "time_step_s": 0.25,
+    "surface_angles": 48,
+    "surface_levels": 7
+  },
+  "formal_evaluation": {
+    "candidate_count": 2,
+    "time_scan_step_s": 0.05,
+    "root_tolerance_s": 1e-8,
+    "surface_angles": 180,
+    "surface_levels": 21,
+    "adaptive_max_surface_angles": 360,
+    "adaptive_max_surface_levels": 41,
+    "continuous_refinement_starts": 1,
+    "continuous_refinement_maxfev": 40
+  },
+  "deletion_evaluation": {
+    "time_scan_step_s": 0.2,
+    "surface_angles": 90,
+    "surface_levels": 11
+  },
+  "validation": {
+    "convergence_settings": [
+      {"time_scan_step_s": 0.2, "surface_angles": 90, "surface_levels": 11},
+      {"time_scan_step_s": 0.1, "surface_angles": 180, "surface_levels": 21},
+      {"time_scan_step_s": 0.05, "surface_angles": 360, "surface_levels": 41}
+    ],
+    "boundary_probe_s": 0.0001,
+    "direct_surface_angles": 360,
+    "direct_surface_levels": 41,
+    "permutation_samples": 4,
+    "q4_regression_expected_s": 10.13885732601105,
+    "q4_regression_tolerance_s": 0.00001,
+    "q4_strategy": [
+      [3.1294013468246114, 136.94294795970202, 0.815996802195909, 3.9637354054251857],
+      [5.064427753079513, 112.12636256955402, 7.471101988163637, 5.477371275031839],
+      [2.1071434725538944, 138.52716525882363, 19.053572986643196, 6.818713572096708]
+    ]
+  },
+  "near_optimal_count": 2
+}

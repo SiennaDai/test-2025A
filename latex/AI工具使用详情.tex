@@ -1,0 +1,75 @@
+% !TeX program = xelatex
+\documentclass[UTF8,zihao=-4]{ctexart}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{booktabs,longtable,array}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{2em}
+\linespread{1.25}
+
+\begin{document}
+\pagestyle{plain}
+\begin{center}
+  {\heiti\zihao{2} AI 工具使用详情}
+\end{center}
+
+\section{工具名称和版本}
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.32\linewidth}>{\raggedright\arraybackslash}p{0.32\linewidth}}
+\toprule
+工具 & 版本或型号 & 开发机构与使用日期 \\
+\midrule
+OpenAI Codex & GPT-5（Codex Agent；服务端快照号未公开） & OpenAI；2026-08-20--2026-08-21 \\
+\bottomrule
+\end{longtable}
+
+本文属于对 2025 A 题的复盘项目，故如实记录实际使用日期，不改写为竞赛举行日期。
+
+\section{具体使用目的和环节}
+
+\begin{enumerate}
+  \item \textbf{模型规格整理：}把题面参数、运动学、严格整圆柱遮蔽口径、联合覆盖量词、目标函数和约束整理为可审计规格。
+  \item \textbf{程序实现：}辅助实现问题一至问题五的运动学、几何判定、区间求根、分层优化、结果导出和事件测试。
+  \item \textbf{验证：}辅助设计网格收敛、边界探针、独立视线--球相交、标签置换、互补构造和前序问题回归检查。
+  \item \textbf{论文写作与排版：}依据已生成的正式结果和验证记录组织 Markdown 初稿，并转换为符合 2025 年论文格式规范的 LaTeX 稿件。
+\end{enumerate}
+
+\section{关键交互记录}
+
+下表保留决定模型口径和最终结论的代表性交互。回复栏为关键内容摘要；完整程序、配置和日志已在支撑材料中保留，可用于核验。
+
+\begin{longtable}{p{0.07\linewidth}p{0.36\linewidth}p{0.47\linewidth}}
+\toprule
+序号 & 重要提示词或人工指令 & AI 回复与产出摘要 \\
+\midrule
+1 & “严格遮住整个圆柱目标作为有效遮蔽主判据；圆柱中心视线近似作为对照；$g=9.8$，并以 $9.81$ 核对。” & 建立统一运动学和严格视线几何；对问题一计算投放点、起爆点、遮蔽区间和时长，并完成重力敏感性与独立几何检查。 \\
+2 & “继续进入问题二，先讨论再建模；可以使用代码库，并调用编码 Agent 实现。” & 将航向、速度、投放时刻和引信设为决策变量；采用差分进化、局部精修和严格复算，明确求解受预算限制，不宣称全局最优。 \\
+3 & “联合覆盖口径符合实际物理意义。” & 将多云判据写为“对每条目标视线，至少存在一朵有效云与之相交”，即 $\forall$-ray $\exists$-cloud；增加双云互补构造以防实现退化为单云区间并集。 \\
+4 & “继续问题三”及后续逐问确认。 & 依次完成同机三弹、三机各一弹、五机多弹对三导弹的参数化、优化、正式复算与验证；持续报告无贡献弹位、预算停止和目标偏置等限制。 \\
+5 & “根据论文 Markdown 完成 LaTeX，格式要求联网搜索。” & 检索 2025 年论文格式和 AI 工具使用规定；生成匿名电子版论文、完整源代码附录、AI 使用详情及编译说明。 \\
+\bottomrule
+\end{longtable}
+
+\section{采纳和人工修改情况}
+
+\begin{itemize}
+  \item 使用者明确选择“严格整圆柱遮蔽”为主判据、中心视线为对照，并确认重力参数；AI 未替代这些口径决定。
+  \item 使用者明确选择多烟幕联合覆盖的物理口径。实现过程中对时间网格相位、边界事件吸附和独立射线判别的缺陷进行过修正，旧的失真结果未作为最终结论保留。
+  \item 所有最终数值均由项目程序重新计算，并由网格、边界和独立几何检查交叉核对；对未获得全局收敛证明的结果统一表述为“当前最佳已知策略”。
+  \item 论文文字依据结构化模型规格、结果表和验证日志生成；涉及结论边界的表述经过人工逐步确认。正式参赛提交前，参赛队仍须逐式、逐表、逐项检查并对全部内容承担责任。
+  \item 当前三个 Excel 结果文件使用临时字段结构。官方结果模板缺失，因此未由 AI 猜测模板字段；获得模板后须由参赛队人工映射并复核。
+\end{itemize}
+
+\section{可追溯材料}
+
+主要审计入口包括：
+\begin{itemize}
+  \item \nolinkurl{model-spec.md} 与 \nolinkurl{analysis-log.md}；
+  \item \nolinkurl{validation-q1.md} 至 \nolinkurl{validation-q5.md}；
+  \item \nolinkurl{outputs/manifest.json} 与 \nolinkurl{outputs/logs/}；
+  \item \nolinkurl{tests/}。
+\end{itemize}
+这些文件分别记录模型契约、决策过程、数值结果、随机种子、求解器停止状态和独立验证证据。
+
+\end{document}

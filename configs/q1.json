@@ -1,0 +1,14 @@
+{
+  "gravity": 9.8,
+  "gravity_sensitivity": 9.81,
+  "time_scan_step": 0.02,
+  "root_tolerance": 1e-10,
+  "rim_samples": 2048,
+  "validation_rim_samples": [256, 512, 1024, 2048, 4096],
+  "validation_time_steps": [0.1, 0.05, 0.02, 0.01],
+  "surface_validation_angles": 1440,
+  "surface_validation_levels": 81,
+  "boundary_probe_seconds": 0.0001,
+  "boundary_margin_tolerance": 1e-6,
+  "plot_points": 801
+}

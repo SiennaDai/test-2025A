@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*:Zone.Identifier
+.pytest_cache/
+.ruff_cache/
+
+# LaTeX intermediates
+latex/*.aux
+latex/*.fdb_latexmk
+latex/*.fls
+latex/*.log
+latex/*.out
+latex/*.synctex.gz
+latex/*.toc

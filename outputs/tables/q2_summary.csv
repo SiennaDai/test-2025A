@@ -1,0 +1,2 @@
+﻿rank,theta_rad,theta_deg,speed_m_s,release_time_s,release_x_m,release_y_m,release_z_m,fuse_delay_s,explosion_time_s,explosion_x_m,explosion_y_m,explosion_z_m,strict_duration_s,center_duration_s,minimum_cloud_center_height_m,cloud_center_below_ground,cloud_center_ground_crossing_time_s
+1,3.0829669144676473,176.64099257746605,70.0,0.0,17800.0,0.0,1800.0,2.4967856396160064,2.4967856396160064,17625.525268056128,10.240444866222791,1769.4537012020558,4.542879947227961,4.572673761421399,1709.4537012020558,False,

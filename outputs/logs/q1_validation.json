@@ -1,0 +1,271 @@
+{
+  "model": "q1-shadow-cone-v1",
+  "criterion": "full target cylinder contained in the missile-view shadow cone",
+  "target_extreme_set": "top and bottom circular rims",
+  "gravity_m_s2": 9.8,
+  "time_scan_step_s": 0.02,
+  "root_tolerance_s": 1e-10,
+  "boundary_margin_tolerance_m": 1e-06,
+  "rim_convergence": [
+    {
+      "rim_samples": 256,
+      "duration_s": 1.3916426681980916,
+      "interval_count": 1
+    },
+    {
+      "rim_samples": 512,
+      "duration_s": 1.3916426681980916,
+      "interval_count": 1
+    },
+    {
+      "rim_samples": 1024,
+      "duration_s": 1.3916426681980916,
+      "interval_count": 1
+    },
+    {
+      "rim_samples": 2048,
+      "duration_s": 1.3916426681980933,
+      "interval_count": 1
+    },
+    {
+      "rim_samples": 4096,
+      "duration_s": 1.3916426681980916,
+      "interval_count": 1
+    }
+  ],
+  "time_scan_convergence": [
+    {
+      "scan_step_s": 0.1,
+      "duration_s": 1.3916426681978766,
+      "interval_count": 1
+    },
+    {
+      "scan_step_s": 0.05,
+      "duration_s": 1.391642668203307,
+      "interval_count": 1
+    },
+    {
+      "scan_step_s": 0.02,
+      "duration_s": 1.3916426681980933,
+      "interval_count": 1
+    },
+    {
+      "scan_step_s": 0.01,
+      "duration_s": 1.3916426682387293,
+      "interval_count": 1
+    }
+  ],
+  "boundary_checks": [
+    {
+      "criterion": "strict-full-cylinder",
+      "location": "before-start",
+      "time_s": 8.056345490431235,
+      "margin_m": 0.018460497209503046,
+      "expected_state": "outside",
+      "check_passed": true
+    },
+    {
+      "criterion": "strict-full-cylinder",
+      "location": "start",
+      "time_s": 8.056445490431235,
+      "margin_m": 7.389644451905042e-13,
+      "expected_state": "boundary",
+      "check_passed": true
+    },
+    {
+      "criterion": "strict-full-cylinder",
+      "location": "midpoint",
+      "time_s": 8.752266824530281,
+      "margin_m": -253.1443406402608,
+      "expected_state": "inside",
+      "check_passed": true
+    },
+    {
+      "criterion": "strict-full-cylinder",
+      "location": "end",
+      "time_s": 9.448088158629329,
+      "margin_m": -1.9131194406440954e-08,
+      "expected_state": "boundary",
+      "check_passed": true
+    },
+    {
+      "criterion": "strict-full-cylinder",
+      "location": "after-end",
+      "time_s": 9.448188158629328,
+      "margin_m": 218540.90876342985,
+      "expected_state": "outside",
+      "check_passed": true
+    },
+    {
+      "criterion": "center-line",
+      "location": "before-start",
+      "time_s": 8.012906056738137,
+      "margin_m": 0.017342273051269785,
+      "expected_state": "outside",
+      "check_passed": true
+    },
+    {
+      "criterion": "center-line",
+      "location": "start",
+      "time_s": 8.013006056738137,
+      "margin_m": -2.3248958314070478e-11,
+      "expected_state": "boundary",
+      "check_passed": true
+    },
+    {
+      "criterion": "center-line",
+      "location": "midpoint",
+      "time_s": 8.730547107683737,
+      "margin_m": -245.01812971243407,
+      "expected_state": "inside",
+      "check_passed": true
+    },
+    {
+      "criterion": "center-line",
+      "location": "end",
+      "time_s": 9.448088158629336,
+      "margin_m": -1.9128028938553143e-08,
+      "expected_state": "boundary",
+      "check_passed": true
+    },
+    {
+      "criterion": "center-line",
+      "location": "after-end",
+      "time_s": 9.448188158629335,
+      "margin_m": 218423.1352992946,
+      "expected_state": "outside",
+      "check_passed": true
+    }
+  ],
+  "independent_surface_segment_checks": [
+    {
+      "location": "before-start",
+      "time_s": 8.056345490431235,
+      "sampled_surface_points": 349920,
+      "maximum_segment_distance_m": 10.000426038304708,
+      "distance_margin_m": 0.0004260383047078875,
+      "occluded": false,
+      "worst_sampled_target_point": [
+        1.3356629676358145,
+        206.87139028413364,
+        0.0
+      ]
+    },
+    {
+      "location": "start",
+      "time_s": 8.056445490431235,
+      "sampled_surface_points": 349920,
+      "maximum_segment_distance_m": 9.999999995636543,
+      "distance_margin_m": -4.3634571511574904e-09,
+      "occluded": true,
+      "worst_sampled_target_point": [
+        1.3356629676358145,
+        206.87139028413364,
+        0.0
+      ]
+    },
+    {
+      "location": "midpoint",
+      "time_s": 8.752266824530281,
+      "sampled_surface_points": 349920,
+      "maximum_segment_distance_m": 7.1117743470384625,
+      "distance_margin_m": -2.8882256529615375,
+      "occluded": true,
+      "worst_sampled_target_point": [
+        1.9881074129274592,
+        206.71173814407734,
+        0.0
+      ]
+    },
+    {
+      "location": "end",
+      "time_s": 9.448088158629329,
+      "sampled_surface_points": 349920,
+      "maximum_segment_distance_m": 9.999999980868806,
+      "distance_margin_m": -1.9131194406440954e-08,
+      "occluded": true,
+      "worst_sampled_target_point": [
+        7.0,
+        200.0,
+        0.0
+      ]
+    },
+    {
+      "location": "after-end",
+      "time_s": 9.448188158629328,
+      "sampled_surface_points": 349920,
+      "maximum_segment_distance_m": 10.026438179442934,
+      "distance_margin_m": 0.02643817944293403,
+      "occluded": false,
+      "worst_sampled_target_point": [
+        7.0,
+        200.0,
+        0.0
+      ]
+    }
+  ],
+  "derived_checks": {
+    "missile_hit_time_s": 66.99917080747261,
+    "release_time_s": 1.5,
+    "explosion_time_s": 5.1,
+    "cloud_effective_end_s": 25.1,
+    "explosion_above_ground": true,
+    "closest_missile_cloud_time_s": 9.41866784928755,
+    "closest_missile_cloud_distance_m": 4.716706699642374,
+    "missile_enters_cloud": true
+  },
+  "primary_result": {
+    "gravity": 9.8,
+    "release_point": [
+      17620.0,
+      0.0,
+      1800.0
+    ],
+    "explosion_point": [
+      17188.0,
+      0.0,
+      1736.496
+    ],
+    "strict_intervals": [
+      {
+        "start": 8.056445490431235,
+        "end": 9.448088158629329
+      }
+    ],
+    "center_intervals": [
+      {
+        "start": 8.013006056738137,
+        "end": 9.448088158629336
+      }
+    ],
+    "strict_duration": 1.3916426681980933,
+    "center_duration": 1.435082101891199
+  },
+  "gravity_sensitivity_result": {
+    "gravity": 9.81,
+    "release_point": [
+      17620.0,
+      0.0,
+      1800.0
+    ],
+    "explosion_point": [
+      17188.0,
+      0.0,
+      1736.4312
+    ],
+    "strict_intervals": [
+      {
+        "start": 8.04318748971181,
+        "end": 9.448221703431674
+      }
+    ],
+    "center_intervals": [
+      {
+        "start": 7.999305324521869,
+        "end": 9.44822170343167
+      }
+    ],
+    "strict_duration": 1.4050342137198637,
+    "center_duration": 1.4489163789098018
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "theta, speed, and first two bombs fixed at the formal baseline",
+  "variable_order": [
+    "s2_s",
+    "fuse3_s"
+  ],
+  "seed": 933,
+  "search_success": true,
+  "search_message": "Optimization terminated successfully.",
+  "search_evaluations": 32,
+  "settings": {
+    "seed": 933,
+    "time_step_s": 0.1,
+    "surface_angles": 72,
+    "surface_levels": 9,
+    "maxiter": 12,
+    "popsize": 8,
+    "tol": 1e-05,
+    "root_candidate_count": 4,
+    "improvement_threshold_s": 0.0001
+  },
+  "root_refined_candidates": [
+    {
+      "s2_s": 8.17521129715e-05,
+      "fuse3_s": 9.334353521045797,
+      "root_refined_duration_s": 5.51365136312063
+    },
+    {
+      "s2_s": 9.256647637393861,
+      "fuse3_s": 6.966500602251806,
+      "root_refined_duration_s": 5.51365136310983
+    },
+    {
+      "s2_s": 7.337734058298312,
+      "fuse3_s": 4.961453382382983,
+      "root_refined_duration_s": 5.513651363096704
+    },
+    {
+      "s2_s": 5.834937728975118,
+      "fuse3_s": 10.632995144502638,
+      "root_refined_duration_s": 5.513651362511865
+    },
+    {
+      "s2_s": 9.613593577876312,
+      "fuse3_s": 4.353509675928302,
+      "root_refined_duration_s": 5.513651360999678
+    }
+  ],
+  "formal_candidate": {
+    "rank": 1,
+    "theta_rad": 3.1047922065753095,
+    "theta_deg": 177.8914897018753,
+    "speed_m_s": 75.53740845287045,
+    "release_times_s": "[8.659727834377369e-05, 1.0001936769392439, 2.0002754290522153]",
+    "fuse_delays_s": "[2.7648584468708908, 2.58163903013058, 9.334353521045797]",
+    "explosion_times_s": "[2.7649450441492345, 3.5818327070698235, 11.334628950098011]",
+    "joint_duration_s": 5.513651363120298,
+    "conservative_duration_s": 5.513651362707908,
+    "joint_synergy_s": 4.1239012205096515e-10,
+    "sum_individual_strict_duration_s": 7.384337372454944,
+    "individual_strict_overlap_s": 1.8706860097470361
+  },
+  "baseline_joint_duration_s": 5.513651363120298,
+  "formal_improvement_s": 0.0,
+  "improvement_threshold_s": 0.0001,
+  "material_improvement_found": false,
+  "conclusion": "conditional on the first two bombs, no material third-bomb contribution was found"
+}
